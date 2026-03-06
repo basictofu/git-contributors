@@ -39,7 +39,6 @@ impl App {
         let author_items = self.raw_data.authors.iter().map(|c| Text::raw(&c.name));
         let list = List::new(author_items)
             .block(Block::bordered().title("Authors"))
-            .style(Style::new().white())
             .highlight_style(Style::new().italic())
             .highlight_symbol(">>")
             .repeat_highlight_symbol(true);
@@ -74,12 +73,7 @@ impl App {
 
         let rows: Vec<Row> = data
             .iter()
-            .map(|(a, b)| {
-                Row::new([
-                    Cell::from(a.clone()),
-                    Cell::from(b.clone()).style(Style::new().white()),
-                ])
-            })
+            .map(|(a, b)| Row::new([Cell::from(a.clone()), Cell::from(b.clone())]))
             .collect();
 
         let widths = [
