@@ -6,18 +6,21 @@ This is a simple git subcommand to visualize author activity over time as a hist
 
 ## Install
 
-This tool is a git subcommand, which means as long as it is placed somewhere on the user's $PATH, git will automatically pick it up.
-
-Then you can run "git contributors" from within any git repo.
-
-See makefile for details:
+Homebrew:
 
 ```sh
-make install
+brew install basictofu/tap/git-contributors
 ```
 
-## Test
+Then you show be able to run "git contributors" from within any git repo.
 
+## Development
+
+See `make install` for testing on local machine.
+
+As long as the executable is placed on the path, git should pick it up as a new subcommand.
+
+To test everything:
 ```sh
 make test
 ```
