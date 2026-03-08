@@ -1,7 +1,14 @@
 [package]
 name = "git-contributors"
+description = "View commit histograms in your terminal"
+homepage = "https://github.com/basictofu/git-contributors"
+repository = "https://github.com/basictofu/git-contributors"
 version = "0.1.0"
 edition = "2024"
+license-file = "LICENSE"
+readme = "README.md"
+keywords = ["git", "visualization"]
+categories = ["command-line-utilities", "visualization"]
 
 [dependencies]
 chrono = "0.4.43"
